@@ -1,0 +1,44 @@
+# PyInstaller spec for Hermes Desktop Installer
+a = Analysis(
+    ['/home/adaops/Documents/hermes-desktop-exe/installer.py'],
+    pathex=['/home/adaops/Documents/hermes-desktop-exe'],
+    binaries=[],
+    datas=[
+        ('/home/adaops/Documents/hermes-desktop-exe/hermes-desktop.py', '.'),
+        ('/home/adaops/Documents/hermes-desktop-exe/ada-backup.sh', '.'),
+        ('/home/adaops/Documents/hermes-desktop-exe/README.md', '.'),
+    ],
+    hiddenimports=['tkinter', 'tkinter.ttk'],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    win_no_prefer_redirects=False,
+    win_private_assemblies=False,
+    cipher=None,
+    noarchive=False,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.zipfiles,
+    a.datas,
+    [],
+    name='Hermes-Desktop-Installer',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,  # No terminal window!
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon=None,
+)
