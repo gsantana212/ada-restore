@@ -1,12 +1,12 @@
-# PyInstaller spec for Hermes Desktop Installer
+# -*- mode: python ; coding: utf-8 -*-
 a = Analysis(
-    ['/home/adaops/Documents/hermes-desktop-exe/installer.py'],
-    pathex=['/home/adaops/Documents/hermes-desktop-exe'],
+    ['installer.py'],
+    pathex=['.'],
     binaries=[],
     datas=[
-        ('/home/adaops/Documents/hermes-desktop-exe/hermes-desktop.py', '.'),
-        ('/home/adaops/Documents/hermes-desktop-exe/ada-backup.sh', '.'),
-        ('/home/adaops/Documents/hermes-desktop-exe/README.md', '.'),
+        ('hermes-desktop.py', '.'),
+        ('ada-backup.sh', '.'),
+        ('README.md', '.'),
     ],
     hiddenimports=['tkinter', 'tkinter.ttk'],
     hookspath=[],

@@ -1,0 +1,31 @@
+name: Build Installer
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PyInstaller
+        run: pip install pyinstaller
+
+      - name: Build EXE
+        working-directory: hermes-desktop-exe
+        run: pyinstaller --clean --noconfirm installer.spec
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Hermes-Desktop-Installer
+          path: hermes-desktop-exe/dist/Hermes-Desktop-Installer.exe
