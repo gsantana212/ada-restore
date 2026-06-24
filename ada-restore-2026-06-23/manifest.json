@@ -1,0 +1,19 @@
+{
+  "name": "ada-restore-2026-06-23",
+  "version": "1.0.0",
+  "created_by": "Ada (MiniMax-M3) for Boo",
+  "purpose": "Restore Ada chat on any box (Windows/Mac/Linux)",
+  "files": {
+    "ada-chat.py": "Python Tkinter desktop chat app (~5KB)",
+    "Ada-Chat.bat": "Windows double-click launcher",
+    "restore.sh": "Linux/Mac launcher",
+    "README.md": "Restore instructions",
+    "ada-backup.sh": "Full Ada backup script (optional)"
+  },
+  "requirements": "Python 3.10+, llama.cpp running on localhost:11434",
+  "default_endpoint": "http://127.0.0.1:11434/v1",
+  "alternate_endpoints": {
+    "winbox-gpu": "http://100.109.114.49:8100/v1 (if Tailscale)",
+    "openrouter-free": "https://openrouter.ai/api/v1 (last resort, set OPENROUTER_API_KEY)"
+  }
+}
