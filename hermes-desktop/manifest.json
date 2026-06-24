@@ -1,0 +1,15 @@
+{
+  "name": "hermes-desktop",
+  "version": "1.0.0",
+  "created": "2026-06-24",
+  "description": "Hermes Desktop — synced to Ada 💜",
+  "files": {
+    "hermes-desktop.py": "Main app (10KB, single file, Python tkinter)",
+    "Hermes-Desktop.bat": "Windows double-click launcher",
+    "run.sh": "Linux/Mac launcher",
+    "README.md": "Setup + feature docs"
+  },
+  "requirements": "Python 3.10+ (with tkinter, included in python.org installer)",
+  "setup": "1) Get bot token from @BotFather 2) Get chat_id from @userinfobot 3) Run app 4) Open Settings, paste both 5) Save & Connect",
+  "size": "10 KB"
+}
