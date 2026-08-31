@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+env/
+
+# Build artifacts
+dist/
+build/
+*.spec.bak
+
+# Installer binaries (release artifacts only, not committed)
+*.exe
+*.linux
+*.dmg
+*.dll
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
