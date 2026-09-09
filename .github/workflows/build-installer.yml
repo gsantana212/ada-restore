@@ -18,7 +18,9 @@ jobs:
           python-version: '3.11'
 
       - name: Install PyInstaller
-        run: pip install pyinstaller
+        # Pinned to a known-working version. PyInstaller's default behavior
+        # changes between releases can break the EXE build.
+        run: pip install pyinstaller==6.10.0
 
       - name: Build EXE
         working-directory: hermes-desktop-exe
