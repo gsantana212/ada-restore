@@ -28,7 +28,7 @@ Per `README.md`:
 | `hermes-desktop/` | Python source | The cross-platform launcher |
 | `hermes-desktop-exe/` | Linux ELF build | **Historical artifact only** — do not modify |
 | `hermes-desktop-builder/` | Build tools | Compiles the Windows installer |
-| `ada-restore-2026-06-23/` | Backup snapshot | Run `bash restore.sh` inside to rehydrate `~/.hermes/` |
+| `ada-restore-2026-06-23/` | Backup snapshot | Run `bash restore.sh` inside with an `ada-backup-*.tar.zst` tarball to rehydrate `~/.hermes/` |
 | `.github/workflows/` | CI | Builds the installer on `v*` tag push |
 | `LICENSE`, `SECURITY.md`, `README.md` | Standard repo glue | — |
 

@@ -8,7 +8,13 @@
 
 ## Reporting a Vulnerability
 
-Email **gsantana212@users.noreply.github.com** with:
+**Do not report vulnerabilities via public GitHub issues.**
+
+Use GitHub's private vulnerability reporting: open this repository, go to
+**Security â†’ Report a vulnerability** (https://github.com/gsantana212/ada-restore/security/advisories/new).
+This reaches the maintainer directly and privately.
+
+Please include:
 - A description of the issue
 - Reproduction steps (or a sample input that triggered it)
 - Expected vs actual behavior
